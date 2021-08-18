@@ -1,9 +1,11 @@
 # fetchfetch
-A neofetch-like tool to get all the neofetch-like tools installed on your computer, written in python
+A neofetch-like tool to get all the neofetch-like tools installed on your computer, written in python.
+
+Thanks to [Adil Gurbuz](https://github.com/beucismis/awesome-fetch) for the list of \*fetch programs
 
 ## Installation
 
-To "install" first get the code by running:
+To "install" (unix only) first get the code by running:
 ```shell
 git clone https://github.com/Blobadoodle/fetchfetch.git
 ```
