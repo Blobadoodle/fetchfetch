@@ -13,6 +13,7 @@ sudo python3 install.py
 ```
 ## Usage
 
-Run the program with: ```shell
+Run the program with:
+```shell
 fetchfetch
 ```
