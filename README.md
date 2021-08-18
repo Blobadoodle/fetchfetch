@@ -17,3 +17,6 @@ Run the program with:
 ```shell
 fetchfetch
 ```
+## TODO
+
+Add colour to output command
