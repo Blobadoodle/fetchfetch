@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+
+from shutil import which
+
+def is_tool(name):
+    from shutil import which
+
+    return which(name) is not None
+
+iscat = False
+
+# Thanks to github.com/beucismis/awesome-fetch for the base list
+
+fetches = {
+    "Batchfile": {
+        "WinFetch" # probably wont detect it but still
+    },
+    "C": {
+        "afetch",
+        "archfetch",
+        "cpufetch",
+        "efetch",
+        "fastfetch",
+        "flexfetch",
+        "smilefetch",
+        "uwufetch",
+        "yafetch",
+        "sysfetch",
+    },
+    "Erl": {
+        "erlfetch",
+    },
+    "Go": {
+        "archimede",
+        "bunnyfetch",
+        "gf",
+        "winfetch",
+    },
+    "Haskell": {
+        "hsfetch",
+    },
+    "Lua": {
+        "3dfetch", # these two dont make much sense but
+        "gmod-fetch",
+    },
+    "Perl": {
+        "fetch-master-6000",
+        "phpfetch",
+    },
+    "Powershell": {
+        "powerfetch",
+        "winfetch",
+    },
+    "Prolog": {
+        "profetch",
+    },
+    "Python": {
+        "lovefetch",
+        "pokefetch",
+        "pridefetch",
+        "pwy",
+        "pythonfetch",
+        "tinyscreen",
+        "tfetch",
+        "vfetch",
+        "wfetch",
+        "xfcfet",
+    },
+    "Rust": {
+        "ferris-fetch",
+        "freshfetch",
+        "fsi",
+        "macchina",
+        "onefetch",
+        "rfetch",
+        "rsfetch",
+        "scrftch",
+    },
+    "Scala": {
+        "scalafetch",
+    },
+    "Shell": {
+        "101fetch",
+        "bfetch",
+        "androfetch",
+        "cfetch",
+        "disfetch",
+        "gfetch",
+        "info.sh",
+        "mfetch",
+        "neofetch",
+        "nerdfetch",
+        "pfetch",
+        "screenFetch",
+        "sfetch",
+        "reifetch",
+        "wziumfecz",
+    },
+    "Typescript": {
+        "ghfetch"
+    }
+}
+
+for type in fetches:
+    iscat = False
+    for fetch in fetches[type]:
+        if is_tool(fetch):
+            if iscat == False:
+                print(type)
+                iscat = True
+            print("    " + fetch)
