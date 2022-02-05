@@ -11,6 +11,7 @@ git clone https://github.com/Blobadoodle/fetchfetch.git
 ```
 Then to install run:
 ```shell
+cd fetchfetch
 sudo python3 install.py
 ```
 ## Usage
