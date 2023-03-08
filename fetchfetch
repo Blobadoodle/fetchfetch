@@ -94,6 +94,7 @@ fetches = {
         "sfetch",
         "reifetch",
         "wziumfecz",
+        "hentaifetch"
     },
     "Typescript": {
         "ghfetch"
