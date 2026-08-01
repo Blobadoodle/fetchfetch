@@ -10,6 +10,6 @@ if getuser() != "root":
 system("chmod +x fetchfetch")
 system("cp fetchfetch /usr/bin/")
 
-print("FetchFetch Sucesfully installed!")
+print("FetchFetch Successfully installed!")
 
 # yes i know this is useless but i do not care
